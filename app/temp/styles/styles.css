@@ -1140,6 +1140,14 @@ img {
 	height: auto;
 }
 
+h1,
+h2,
+h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 .wrapper {
 	overflow: hidden;
 	padding-left: 18px;
@@ -1250,4 +1258,57 @@ img {
 
 .main-navigation__item a:hover {
   border-bottom: 2px solid #e67e22;
+}
+
+.section {
+	padding: 80px 0;
+}
+
+.section__title {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section__title::after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section__subtitle {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.section-features__item {
+  padding: 1%;
+}
+
+.section-features__item--title {
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+  letter-spacing: 0;
+}
+
+.section-features__item--text {
+  font-size: 1.15rem;
+  line-height: 145%;
+}
+
+.icon-big {
+	font-size: 350%;
+	display: block;
+	color: #e67e22;
+	margin-bottom: 10px;
 }

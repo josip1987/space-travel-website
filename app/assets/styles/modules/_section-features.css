@@ -1,0 +1,17 @@
+.section-features {
+
+	&__item {
+		padding: 1%;
+
+		&--title {
+			font-size: 1.35rem;
+			margin-bottom: 15px;
+			letter-spacing: 0;
+		}
+
+		&--text {
+			font-size: 1.15rem;
+			line-height: 145%;
+		}
+	}
+}
