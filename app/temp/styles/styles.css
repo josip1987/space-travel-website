@@ -1289,6 +1289,7 @@ h3 {
   width: 70%;
   margin-left: 15%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .section-features__item {
@@ -1304,6 +1305,45 @@ h3 {
 .section-features__item--text {
   font-size: 1.15rem;
   line-height: 145%;
+}
+
+.section-planets {
+	padding: 0;
+}
+
+.section-planets__gallery {
+  list-style: none;
+  width: 100%;
+}
+
+.section-planets__planet {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.section-planets__image {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.section-planets__image img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  opacity: 0.7;
+}
+
+.section-planets__image img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 1;
 }
 
 .icon-big {
