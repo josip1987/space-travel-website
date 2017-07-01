@@ -1229,6 +1229,12 @@ h3 {
   border: 1px solid #cf6d17;
 }
 
+.btn-app__image {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
 .logo {
 	height: 100px;
 	width: auto;
@@ -1344,6 +1350,40 @@ h3 {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   opacity: 1;
+}
+
+.how-it-works__box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.how-it-works__box:last-child {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.how-it-works__image {
+  width: 40%;
+}
+
+.how-it-works__steps {
+  margin-bottom: 50px;
+}
+
+.how-it-works__steps--number {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
 }
 
 .icon-big {

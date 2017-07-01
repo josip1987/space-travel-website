@@ -1,0 +1,36 @@
+.how-it-works {
+
+	&__box:first-child {
+		text-align: right;
+		padding-right: 3%;
+		margin-top: 30px;
+	}
+
+	&__box:last-child {
+		text-align: left;
+		padding-left: 3%;
+		margin-top: 70px;
+	}
+
+	&__image {
+		width: 40%;
+	}
+
+	&__steps {
+		margin-bottom: 50px;
+
+		&--number {
+			color: $carrot;
+			border: 2px solid $carrot;
+			display: inline-block;
+			border-radius: 50%;
+			height: 55px;
+			width: 55px;
+			text-align: center;
+			padding: 5px;
+			float: left;
+			font-size: 150%;
+			margin-right: 25px;
+		}
+	}
+}
