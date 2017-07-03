@@ -1,0 +1,59 @@
+.plan {
+	background-color: $whitecoffee;
+
+	&__box {
+		background-color: $white;
+		border-radius: 5px;
+		width: 90%;
+		margin-left: 5%;
+		box-shadow: 0 2px 2px #efefef;
+		
+		&--section {
+			padding: 15px;
+			border-bottom: 2px solid $whitecoffee;
+
+			&:last-child {
+				text-align: center;
+			}
+
+			&:first-child {
+				background-color: $backgrounddarker;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+			}
+		}
+
+		&--title {
+			padding: 5px 0 20px 0;
+		}
+
+		&--price {
+			font-size: 3rem;
+			margin-bottom: 10px;
+			font-weight: 100;
+			color: $carrot;
+
+			& span {
+				font-size: 1.3rem;
+				font-weight: 300;
+			}
+		}
+
+		&--text {
+			font-size: 1rem;
+		}
+
+		&--details {
+			list-style: none;
+
+			& li {
+				padding: 5px 0;
+
+				& i {
+					color: $carrot;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

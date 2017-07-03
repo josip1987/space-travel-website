@@ -1470,6 +1470,66 @@ h3 {
   font-size: 5rem;
 }
 
+.plan {
+	background-color: #f4f4f4;
+}
+
+.plan__box {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.plan__box--section {
+  padding: 15px;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.plan__box--section:last-child {
+  text-align: center;
+}
+
+.plan__box--section:first-child {
+  background-color: #fcfcfc;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.plan__box--title {
+  padding: 5px 0 20px 0;
+}
+
+.plan__box--price {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan__box--price span {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.plan__box--text {
+  font-size: 1rem;
+}
+
+.plan__box--details {
+  list-style: none;
+}
+
+.plan__box--details li {
+  padding: 5px 0;
+}
+
+.plan__box--details li i {
+  color: #e67e22;
+  margin-right: 10px;
+}
+
 .icon-big {
 	font-size: 350%;
 	display: block;
