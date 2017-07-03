@@ -1,5 +1,33 @@
 .transfers {
 	&__icon {
 		float: left;
+		color: $carrot;
+		margin-right: 7px;
+	}
+
+	&__image {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 1.3rem;
+	}
+
+	&__info {
+		margin-bottom: 3px;
+
+		&
+		a:link,
+		a:visited {
+			text-decoration: none;
+			transition: all .3s ease;
+
+			&:hover {
+				color: $background;
+			}
+		}
 	}
 }

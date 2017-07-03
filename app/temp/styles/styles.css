@@ -1401,6 +1401,39 @@ h3 {
 
 .transfers__icon {
   float: left;
+  color: #e67e22;
+  margin-right: 7px;
+}
+
+.transfers__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.transfers__title {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.transfers__info {
+  margin-bottom: 3px;
+}
+
+.transfers__info
+		a:link,
+		.transfers__info a:visited {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.transfers__info
+		a:link:hover, .transfers__info a:visited:hover {
+  color: #555;
+}
+
+.testimonials {
+	background-color: #f4f4f4;
 }
 
 .icon-big {
