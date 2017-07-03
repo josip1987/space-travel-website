@@ -1,3 +1,36 @@
 .testimonials {
-	background-color: $whitecoffee;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/background-1.jpg);
+	background-size: cover;
+	color: $white;
+	background-attachment: fixed;
+
+	&__quote {
+		padding: 2%;
+		font-style: italic;
+		line-height: 145%;
+		position: relative;
+		margin-top: 40px;
+
+		& cite {
+			font-size: 1rem;
+			margin-top: 25px;
+			display: block;
+		}
+
+		&--image {
+			height: 45px;
+			border-radius: 50%;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+	}
+
+	&__quote::before {
+		content: "\201C";
+		display: block;
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		font-size: 5rem;
+	}
 }

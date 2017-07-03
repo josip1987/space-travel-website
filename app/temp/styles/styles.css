@@ -1173,6 +1173,7 @@ h3 {
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
+	background-attachment: fixed;
 }
 
 .hero__text {
@@ -1433,7 +1434,40 @@ h3 {
 }
 
 .testimonials {
-	background-color: #f4f4f4;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/background-1.jpg);
+	background-size: cover;
+	color: #ffffff;
+	background-attachment: fixed;
+}
+
+.testimonials__quote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.testimonials__quote cite {
+  font-size: 1rem;
+  margin-top: 25px;
+  display: block;
+}
+
+.testimonials__quote--image {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.testimonials__quote::before {
+  content: "\201C";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  font-size: 5rem;
 }
 
 .icon-big {
