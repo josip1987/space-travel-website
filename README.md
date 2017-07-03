@@ -1,3 +1,3 @@
-# A classic landing page for an imaginary SpaceTravel company
+A classic landing page for an imaginary SpaceTravel company
 
-# Just for fun
+Just for fun
