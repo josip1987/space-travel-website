@@ -9,6 +9,7 @@
 	float: right;
 	list-style: none;
 	margin-top: 50px;
+	display: none;
 
 	&__item {
 		display: inline-block;
@@ -26,5 +27,9 @@
 				border-bottom: 2px solid $carrot;
 			}
 		}
+	}
+
+	@mixin atMedium {
+		display: block;
 	}
 }

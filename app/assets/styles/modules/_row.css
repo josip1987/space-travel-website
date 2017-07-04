@@ -1,6 +1,15 @@
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
+	padding: 0 4%;
+
+	@mixin atSmall {
+		padding: 0 2%;
+	}
+
+	@mixin atLarge {
+		padding: 0;
+	}
 
 	@mixin clearfix;
 }

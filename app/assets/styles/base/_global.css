@@ -7,9 +7,17 @@
 body {
 	color: $background;
 	font-family: 'Lato', 'Arial', sans-serif;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;
+
+	@mixin atMedium {
+		font-size: 1.125rem;
+	}
+
+	@mixin atLarge {
+		font-size: 1.25rem;
+	}
 }
 
 img {
@@ -23,4 +31,11 @@ h3 {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 530px) {
+	.col {
+		width: 100%;
+		margin: 0 0 2% 0; 
+	}
 }

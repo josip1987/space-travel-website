@@ -1,8 +1,16 @@
 .form {
 
 	&__container {
-		width: 60%;
+		width: 100%;
 		margin: 0 auto;
+
+		@mixin atSmall {
+			width: 90%;
+		}
+
+		@mixin atMedium {
+			width: 60%;
+		}
 	}
 
 	& input[type="text"],
@@ -15,6 +23,10 @@
 	  	border: 1px solid $grey;
 	  	background-color: transparent;
 	  	color: $background;
+
+	  	&:hover, &:focus {
+	  		background-color: rgba($carrot, .1);
+	  	}
 	  }
 
 	 & textarea {

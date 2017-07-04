@@ -1,14 +1,30 @@
 .section {
-	padding: 80px 0;
+	padding: 25px 0;
+
+	@mixin atSmall {
+		padding: 30px 0;
+	}
+
+	@mixin atMedium {
+		padding: 60px 0;
+	}
+
+	@mixin atLarge {
+		padding: 80px 0;
+	}
 
 	&__title {
 		font-weight: 300;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		font-size: 2.25rem;
+		font-size: 1.75rem;
 		word-spacing: 2px;
 		text-align: center;
 		margin-bottom: 30px;
+
+		@mixin atSmall {
+			font-size: 2.25rem;
+		}
 
 		&::after {
 			display: block;
@@ -23,9 +39,19 @@
 
 	&__subtitle {
 		line-height: 145%;
-		width: 70%;
-		margin-left: 15%;
+		width: 100%;
+		margin-left: 0;
 		text-align: center;
 		margin-bottom: 30px;
+
+		@mixin atMedium {
+			width: 80%;
+			margin-left: 10%;
+		}
+
+		@mixin atLarge {
+			width: 70%;
+			margin-left: 15%;
+		}
 	}
 }

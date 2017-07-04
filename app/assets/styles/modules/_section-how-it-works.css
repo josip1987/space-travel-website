@@ -3,44 +3,85 @@
 	background-color: $whitecoffee;
 
 	&__box:first-child {
-		text-align: right;
+		text-align: center;
 		padding-right: 3%;
-		margin-top: 30px;
+		margin-top: 10px;
+
+		@mixin atMedium {
+			text-align: right;
+		}
+
+		@mixin atLarge {
+			margin-top: 30px;
+		}
 	}
 
 	&__box:last-child {
 		text-align: left;
 		padding-left: 3%;
-		margin-top: 70px;
+		margin-top: 10px;
+
+		@mixin atLarge {
+			margin-top: 70px;
+		}
 	}
 
 	&__image {
-		width: 40%;
+		width: 50%;
+
+		@mixin atLarge {
+			width: 40%;
+		}
 	}
 
 	&__steps {
-		margin-bottom: 50px;
+		margin-bottom: 20px;
+
+		@mixin atMedium {
+			margin-bottom: 50px;
+		}
 
 		&:last-of-type {
-			margin-bottom: 80px;
+			margin-bottom: 20px;
+
+			@mixin atMedium {
+				margin-bottom: 80px;
+			}
 		}
 
 		&--number {
 			color: $carrot;
-			border: 2px solid $carrot;
-			display: inline-block;
+			border: 1px solid $carrot;
 			border-radius: 50%;
-			height: 55px;
-			width: 55px;
+			height: 40px;
+			width: 40px;
 			text-align: center;
 			padding: 6px;
 			float: left;
-			font-size: 150%;
-			margin-right: 25px;
+			font-size: 125%;
+			margin-right: 15px;
+
+			@mixin atMedium {
+				border: 2px solid $carrot;
+				display: inline-block;
+				height: 55px;
+				width: 55px;
+				padding: 8px;
+				font-size: 150%;
+				margin-right: 25px;
+			}
 		}
 
 		&--text {
-			font-size: 1.25rem;
+			font-size: 1rem;
+
+			@mixin atSmall {
+				font-size: 1.05rem;
+			}
+
+			@mixin atMedium {
+				font-size: 1.25rem;
+			}
 		}
 	}
 }
