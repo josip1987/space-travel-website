@@ -43,6 +43,11 @@
 		background-color: $carrot;
 		border: 1px solid $carrot;
 		transition: all .1s ease;
+        width: 100%;
+         
+        @mixin atSmall {
+            width: 100px;
+        }
 
 		&:hover {
 			background-color: transparent;

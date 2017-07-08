@@ -42,7 +42,7 @@
 		}
 
 		&:last-of-type {
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 
 			@mixin atMedium {
 				margin-bottom: 80px;

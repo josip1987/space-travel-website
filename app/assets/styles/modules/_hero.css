@@ -25,11 +25,23 @@
 			margin-top: 0;
 			margin-bottom: 20px;
 			color: $white;
-			font-size: 240%;
+			font-size: 200%;
 			font-weight: 300;
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			word-spacing: 3px;
+            
+            @mixin atSmall {
+                font-size: 240%;
+            }
 		}
 	}
+    
+    & .btn {
+        margin-bottom: 5px;
+        
+        @mixin atMedium {
+            margin-bottom: 0;
+        }
+    }
 }

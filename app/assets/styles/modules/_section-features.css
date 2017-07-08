@@ -11,11 +11,29 @@
 			font-size: 1.35rem;
 			margin-bottom: 15px;
 			letter-spacing: 0;
+            text-align: center;
+            
+            @mixin atSmall {
+                text-align: left;
+            }
 		}
 
 		&--text {
 			font-size: 1.15rem;
 			line-height: 145%;
+            word-break: break-all;
+            
+            @mixin atSmall {
+                word-break: keep-all;
+            }
 		}
+        
+        & .icon-big {
+            text-align: center;
+            
+            @mixin atSmall {
+                text-align: left;
+            }
+        }
 	}
 }

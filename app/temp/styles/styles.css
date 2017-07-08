@@ -1240,11 +1240,29 @@ h3 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
-  font-size: 240%;
+  font-size: 200%;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 3px;
+}
+
+@media(min-width: 480px) {
+
+  .hero__text--title {
+    font-size: 240%;
+  }
+}
+
+.hero .btn {
+  margin-bottom: 5px;
+}
+
+@media(min-width: 768px) {
+
+  .hero .btn {
+    margin-bottom: 0;
+  }
 }
 
 .btn {
@@ -1282,9 +1300,16 @@ h3 {
 }
 
 .btn-app__image {
-  height: 50px;
+  height: 30px;
   width: auto;
   margin-right: 10px;
+}
+
+@media(min-width: 480px) {
+
+  .btn-app__image {
+    height: 50px;
+  }
 }
 
 .logo {
@@ -1414,11 +1439,38 @@ h3 {
   font-size: 1.35rem;
   margin-bottom: 15px;
   letter-spacing: 0;
+  text-align: center;
+}
+
+@media(min-width: 480px) {
+
+  .section-features__item--title {
+    text-align: left;
+  }
 }
 
 .section-features__item--text {
   font-size: 1.15rem;
   line-height: 145%;
+  word-break: break-all;
+}
+
+@media(min-width: 480px) {
+
+  .section-features__item--text {
+    word-break: keep-all;
+  }
+}
+
+.section-features__item .icon-big {
+  text-align: center;
+}
+
+@media(min-width: 480px) {
+
+  .section-features__item .icon-big {
+    text-align: left;
+  }
 }
 
 .section-planets {
@@ -1521,7 +1573,7 @@ h3 {
 }
 
 .how-it-works__steps:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 @media(min-width: 768px) {
@@ -1606,6 +1658,17 @@ h3 {
 .transfers__info
 		a:link:hover, .transfers__info a:visited:hover {
   color: #555;
+}
+
+.transfers__info:last-child {
+  margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+
+  .transfers__info:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .testimonials {
@@ -1769,6 +1832,14 @@ h3 {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   transition: all .1s ease;
+  width: 100%;
+}
+
+@media(min-width: 480px) {
+
+  .form input[type="submit"] {
+    width: 100px;
+  }
 }
 
 .form input[type="submit"]:hover {
@@ -1783,17 +1854,42 @@ h3 {
 
 .footer {
 	background-color: #333;
-	padding: 40px;
+	padding: 10px;
+}
+
+@media(min-width: 768px) {
+
+  .footer {
+    padding: 40px;
+  }
 }
 
 .footer__nav {
   list-style: none;
-  float: left;
+  margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+
+  .footer__nav {
+    float: left;
+  }
 }
 
 .footer__nav li {
-  display: inline-block;
-  margin-right: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+@media(min-width: 768px) {
+
+  .footer__nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .footer__nav--link:hover {
@@ -1802,7 +1898,15 @@ h3 {
 
 .footer__social {
   list-style: none;
-  float: right;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+
+  .footer__social {
+    text-align: right;
+  }
 }
 
 .footer__social li {
@@ -1840,7 +1944,14 @@ h3 {
 .footer__copyright {
   color: #888;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
+}
+
+@media(min-width: 768px) {
+
+  .footer__copyright {
+    margin-top: 50px;
+  }
 }
 
 .icon-big {

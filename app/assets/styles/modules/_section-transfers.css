@@ -30,4 +30,12 @@
 			}
 		}
 	}
+    
+    &__info:last-child {
+        margin-bottom: 20px;
+        
+        @mixin atMedium {
+            margin-bottom: 0;
+        }
+    }
 }
