@@ -1,3 +1,3 @@
-import ExampleClass from './modules/ExampleClass';
+import StickyHeader from './modules/StickyHeader';
 
-var exampleClass = new ExampleClass();
+var stickyHeader = new StickyHeader();

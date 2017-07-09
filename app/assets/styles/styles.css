@@ -9,6 +9,7 @@
 @import "modules/_hero";
 @import "modules/_buttons";
 @import "modules/_main-navigation";
+@import "modules/_sticky-nav";
 @import "modules/_section";
 @import "modules/_section-features";
 @import "modules/_section-planets";

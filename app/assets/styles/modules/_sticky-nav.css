@@ -1,0 +1,50 @@
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 2px 2px $whitecoffee;
+	background-color: rgba($white, 0.98);
+	z-index: 9999;
+}
+
+.sticky .main-navigation {
+	float: right;
+	list-style: none;
+	margin-top: 13px;
+	display: none;
+
+	&__item {
+		display: inline-block;
+		margin-left: 40px;
+		transition: all .1s ease;
+
+		& a {
+			color: $background;
+			padding: 14px 0;
+
+			&:hover {
+				border-bottom: 2px solid $carrot;
+			}
+		}
+	}
+
+	@mixin atMedium {
+		display: block;
+	}
+}
+
+.logo-dark {
+	height: 50px;
+	width: auto;
+	float: left;
+	display: none;
+}
+
+.sticky .logo {
+	display: none;
+}
+
+.sticky .logo-dark {
+	display: block;
+}
