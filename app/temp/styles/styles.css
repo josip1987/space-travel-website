@@ -1379,6 +1379,10 @@ h3 {
   padding: 14px 0;
 }
 
+.sticky .main-navigation__item a.is-current-link {
+  color: #e67e22;
+}
+
 .sticky .main-navigation__item a:hover {
   border-bottom: 2px solid #e67e22;
 }

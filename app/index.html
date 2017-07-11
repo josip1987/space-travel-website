@@ -16,10 +16,10 @@
 				<img src="assets/images/logospacewhite.png" alt="Space Agency" class="logo">
 				<img src="assets/images/logospace.png" alt="Space Agency" class="logo-dark">
 				<ul class="main-navigation">
-					<li class="main-navigation__item"><a href="#">Planet hopping</a></li>
-					<li class="main-navigation__item"><a href="#">How it works</a></li>
-					<li class="main-navigation__item"><a href="#">Moon trip</a></li>
-					<li class="main-navigation__item"><a href="#">Sign up</a></li>
+					<li class="main-navigation__item"><a href="#planet-hopping" id="planet-hopping-link">Planet hopping</a></li>
+					<li class="main-navigation__item"><a href="#how-it-works" id="how-it-works-link">How it works</a></li>
+					<li class="main-navigation__item"><a href="#transfers" id="transfers-link">Transfers</a></li>
+					<li class="main-navigation__item"><a href="#sign-up" id="sign-up-link">Sign up</a></li>
 				</ul> <!--/ .main-navigation -->
 			</div>
 		</nav> <!--/ nav -->
@@ -30,7 +30,7 @@
 		</div> <!--/ .hero__text -->
 	</header> <!--/ .hero -->
 
-	<section class="section section-features">
+	<section class="section section-features" data-matching-link="#planet-hopping-link" id="planet-hopping">
 		<div class="row">
 			<h2 class="section__title">Space vacation &mdash; Guided tours</h2>
 			<p class="section__subtitle">
@@ -102,7 +102,7 @@
 		</ul> <!--/ .section-planets__gallery -->
 	</section> <!--/ .section .section-planets -->
 
-	<section class="section how-it-works">
+	<section class="section how-it-works" data-matching-link="#how-it-works-link" id="how-it-works">
 		<div class="row">
 			<h2 class="section__title">How it works &mdash; Simple as 1, 2, 3</h2>
 		</div> <!--/ .row -->
@@ -131,7 +131,7 @@
 	</section> <!--/ .section .how-it-works -->
 
 
-	<section class="section transfers">
+	<section class="section transfers" data-matching-link="#transfers-link" id="transfers">
 		<div class="row">
 			<h2 class="section__title">We offer transfers from these cities</h2>
 		</div> <!--/ .row -->
@@ -245,7 +245,7 @@
 		</div>  <!--/ .row -->
 	</section> <!--/ .section .testimonials -->
 
-	<section class="section plan">
+	<section class="section plan" data-matching-link="#sign-up-link" id="sign-up">
 		<div class="row">
 			<h2 class="section__title">Choose the plan</h2>
 		</div> <!--/ .row -->

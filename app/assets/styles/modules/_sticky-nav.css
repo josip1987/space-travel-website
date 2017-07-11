@@ -23,6 +23,10 @@
 			color: $background;
 			padding: 14px 0;
 
+			&.is-current-link {
+				color: $carrot;
+			}
+
 			&:hover {
 				border-bottom: 2px solid $carrot;
 			}
@@ -48,3 +52,4 @@
 .sticky .logo-dark {
 	display: block;
 }
+
