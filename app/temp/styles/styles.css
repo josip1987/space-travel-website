@@ -2019,3 +2019,12 @@ h3 {
 	color: #e67e22;
 	margin-bottom: 10px;
 }
+
+.reveal {
+	opacity: 0;
+	transition: opacity 1.5s ease-out;
+}
+
+.reveal--is-visible {
+  opacity: 1;
+}
