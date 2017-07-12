@@ -1219,8 +1219,16 @@ h3 {
   padding: 0 4%;
   top: 50%;
   left: 50%;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.hero__text--slide {
+  -webkit-transform: translate(-50%, -32%);
+          transform: translate(-50%, -32%);
 }
 
 @media(min-width: 480px) {
@@ -1331,7 +1339,7 @@ h3 {
 .main-navigation {
 	float: right;
 	list-style: none;
-	margin-top: 50px;
+	margin-top: 40px;
 	opacity: 0.5;
 	transition: all .3s ease-out;
 	-webkit-transform: translateX(300px);
@@ -1376,7 +1384,11 @@ h3 {
 @media(min-width: 768px) {
 
   .main-navigation {
+    margin-top: 50px;
     display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 

@@ -12,7 +12,12 @@
 		padding: 0 4%;
 		top: 50%;
 		left: 50%;
+		transition: transform .3s ease-out;
 		transform: translate(-50%, -50%);
+
+		&--slide {
+			transform: translate(-50%, -32%);
+		}
 
 		@mixin atSmall {
 			padding: 0 2%

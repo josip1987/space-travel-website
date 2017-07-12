@@ -11179,6 +11179,7 @@ var MobileMenu = function () {
 
 		this.toggleIcon = (0, _jquery2.default)(".toggle-menu");
 		this.navigation = (0, _jquery2.default)(".main-navigation");
+		this.heroText = (0, _jquery2.default)(".hero__text");
 		this.events();
 	}
 
@@ -11192,6 +11193,7 @@ var MobileMenu = function () {
 		value: function toggleTheMenu() {
 			this.navigation.toggleClass("main-navigation--expanded");
 			this.toggleIcon.toggleClass("toggle-menu--close-x");
+			this.heroText.toggleClass("hero__text--slide");
 		}
 	}]);
 

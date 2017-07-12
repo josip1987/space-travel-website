@@ -13,7 +13,7 @@
 .main-navigation {
 	float: right;
 	list-style: none;
-	margin-top: 50px;
+	margin-top: 40px;
 	opacity: 0.5;
 	transition: all .3s ease-out;
 	transform: translateX(300px);
@@ -49,6 +49,9 @@
 	}
 
 	@mixin atMedium {
+		margin-top: 50px;
 		display: block;
+		transform: translateX(0);
+		opacity: 1;
 	}
 }

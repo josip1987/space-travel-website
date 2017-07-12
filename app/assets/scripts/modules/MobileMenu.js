@@ -4,6 +4,7 @@ class MobileMenu {
 	constructor() {
 		this.toggleIcon = $(".toggle-menu");
 		this.navigation = $(".main-navigation");
+		this.heroText = $(".hero__text");
 		this.events();
 	}
 
@@ -14,6 +15,7 @@ class MobileMenu {
 	toggleTheMenu() {
 		this.navigation.toggleClass("main-navigation--expanded");
 		this.toggleIcon.toggleClass("toggle-menu--close-x");
+		this.heroText.toggleClass("hero__text--slide");
 	}
 }
 
