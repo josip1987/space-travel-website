@@ -1,20 +1,37 @@
 .logo {
-	height: 100px;
+	height: 50px;
 	width: auto;
 	float: left;
-	margin-top: 20px;
+	margin-top: 10px;
+
+	@mixin atMedium {
+		height: 100px;
+		margin-top: 20px;
+	}
 }
 
 .main-navigation {
 	float: right;
 	list-style: none;
 	margin-top: 50px;
-	display: none;
+	opacity: 0.5;
+	transition: all .3s ease-out;
+	transform: translateX(300px);
+
+	&--expanded {
+		transform: translateX(0);
+		opacity: 1;
+	}
 
 	&__item {
-		display: inline-block;
-		margin-left: 40px;
-		transition: all .1s ease;
+		display: block;
+		margin: 0 32px 7px 0;
+		transition: all .1s ease-out;
+
+		@mixin atMedium {
+			display: inline-block;
+			margin: 0 0 0 40px;
+		}
 
 		& a {
 			color: $white;
@@ -24,7 +41,9 @@
 			padding: 8px 0;
 
 			&:hover {
-				border-bottom: 2px solid $carrot;
+				@mixin atMedium {
+					border-bottom: 2px solid $carrot;
+				}
 			}
 		}
 	}

@@ -2,8 +2,9 @@ import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
 class Animations {
-	constructor() {
-		this.animatedItems = $(".section-features__item");
+	constructor(elements, offset) {
+		this.animatedItems = elements;
+		this.offsetPercentage = offset;
 		this.hideOnInit();
 		this.createWaypoints();
 	}
@@ -13,6 +14,7 @@ class Animations {
 	}
 
 	createWaypoints() {
+		var that = this;
 		this.animatedItems.each(function() {
 			var currentItem = this;
 			new Waypoint({
@@ -21,7 +23,7 @@ class Animations {
 					$(currentItem).addClass("reveal--is-visible");
 				},
 
-				offset: "75%"
+				offset: that.offsetPercentage
 			});
 		});
 	}

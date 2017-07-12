@@ -6,13 +6,17 @@
 	box-shadow: 0 2px 2px $whitecoffee;
 	background-color: rgba($white, 0.98);
 	z-index: 9999;
+	display: none;
+
+	@mixin atMedium {
+		display: block;
+	}
 }
 
 .sticky .main-navigation {
 	float: right;
 	list-style: none;
 	margin-top: 13px;
-	display: none;
 
 	&__item {
 		display: inline-block;
@@ -31,10 +35,6 @@
 				border-bottom: 2px solid $carrot;
 			}
 		}
-	}
-
-	@mixin atMedium {
-		display: block;
 	}
 }
 

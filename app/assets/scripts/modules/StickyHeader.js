@@ -9,12 +9,14 @@ class StickyHeader {
 		this.createNavWaypoint();
 		this.pageSections = $(".section");
 		this.headerLinks = $(".main-navigation a");
+		this.actionLinks = $(".action");
 		this.createPageSectionWaypoints();	
 		this.addSmoothScroll();
 	}
 
 	addSmoothScroll() {
 		this.headerLinks.smoothScroll();
+		this.actionLinks.smoothScroll();
 	}
 
 	createNavWaypoint() {

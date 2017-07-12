@@ -1,5 +1,12 @@
 import StickyHeader from './modules/StickyHeader';
 import Animations from './modules/Animations';
+import MobileMenu from './modules/MobileMenu';
+import $ from 'jquery';
 
 var stickyHeader = new StickyHeader();
-var animations = new Animations();
+new Animations($(".section-features__item"), "87%");
+new Animations($(".how-it-works__box"), "60%");
+new Animations($(".transfers__image"), "60%");
+new Animations($(".testimonials__quote"), "60%");
+new Animations($(".plan__box"), "60%");
+var mobileMenu = new MobileMenu();

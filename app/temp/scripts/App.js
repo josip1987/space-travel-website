@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11115,10 +11115,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Animations = function () {
-	function Animations() {
+	function Animations(elements, offset) {
 		_classCallCheck(this, Animations);
 
-		this.animatedItems = (0, _jquery2.default)(".section-features__item");
+		this.animatedItems = elements;
+		this.offsetPercentage = offset;
 		this.hideOnInit();
 		this.createWaypoints();
 	}
@@ -11131,6 +11132,7 @@ var Animations = function () {
 	}, {
 		key: 'createWaypoints',
 		value: function createWaypoints() {
+			var that = this;
 			this.animatedItems.each(function () {
 				var currentItem = this;
 				new Waypoint({
@@ -11139,7 +11141,7 @@ var Animations = function () {
 						(0, _jquery2.default)(currentItem).addClass("reveal--is-visible");
 					},
 
-					offset: "75%"
+					offset: that.offsetPercentage
 				});
 			});
 		}
@@ -11167,11 +11169,59 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+	function MobileMenu() {
+		_classCallCheck(this, MobileMenu);
+
+		this.toggleIcon = (0, _jquery2.default)(".toggle-menu");
+		this.navigation = (0, _jquery2.default)(".main-navigation");
+		this.events();
+	}
+
+	_createClass(MobileMenu, [{
+		key: "events",
+		value: function events() {
+			this.toggleIcon.click(this.toggleTheMenu.bind(this));
+		}
+	}, {
+		key: "toggleTheMenu",
+		value: function toggleTheMenu() {
+			this.navigation.toggleClass("main-navigation--expanded");
+			this.toggleIcon.toggleClass("toggle-menu--close-x");
+		}
+	}]);
+
+	return MobileMenu;
+}();
+
+exports.default = MobileMenu;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(5);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11188,6 +11238,7 @@ var StickyHeader = function () {
 		this.createNavWaypoint();
 		this.pageSections = (0, _jquery2.default)(".section");
 		this.headerLinks = (0, _jquery2.default)(".main-navigation a");
+		this.actionLinks = (0, _jquery2.default)(".action");
 		this.createPageSectionWaypoints();
 		this.addSmoothScroll();
 	}
@@ -11196,6 +11247,7 @@ var StickyHeader = function () {
 		key: 'addSmoothScroll',
 		value: function addSmoothScroll() {
 			this.headerLinks.smoothScroll();
+			this.actionLinks.smoothScroll();
 		}
 	}, {
 		key: 'createNavWaypoint',
@@ -11253,13 +11305,13 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _StickyHeader = __webpack_require__(3);
+var _StickyHeader = __webpack_require__(4);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
@@ -11267,13 +11319,26 @@ var _Animations = __webpack_require__(2);
 
 var _Animations2 = _interopRequireDefault(_Animations);
 
+var _MobileMenu = __webpack_require__(3);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var stickyHeader = new _StickyHeader2.default();
-var animations = new _Animations2.default();
+new _Animations2.default((0, _jquery2.default)(".section-features__item"), "87%");
+new _Animations2.default((0, _jquery2.default)(".how-it-works__box"), "60%");
+new _Animations2.default((0, _jquery2.default)(".transfers__image"), "60%");
+new _Animations2.default((0, _jquery2.default)(".testimonials__quote"), "60%");
+new _Animations2.default((0, _jquery2.default)(".plan__box"), "60%");
+var mobileMenu = new _MobileMenu2.default();
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
