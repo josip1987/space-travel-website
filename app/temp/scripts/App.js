@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11219,11 +11219,67 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ScrollTop = function () {
+	function ScrollTop() {
+		_classCallCheck(this, ScrollTop);
+
+		this.scrollUp = (0, _jquery2.default)("#return-to-top");
+		this.events();
+	}
+
+	_createClass(ScrollTop, [{
+		key: 'events',
+		value: function events() {
+			this.scrollUp.click(this.returnToTop.bind(this));
+		}
+	}, {
+		key: 'returnToTop',
+		value: function returnToTop() {
+			(0, _jquery2.default)('body,html').animate({
+				scrollTop: 0
+			}, 500);
+		}
+	}]);
+
+	return ScrollTop;
+}();
+
+(0, _jquery2.default)(window).scroll(function () {
+	if ((0, _jquery2.default)(this).scrollTop() >= 200) {
+		(0, _jquery2.default)('#return-to-top').fadeIn();
+	} else {
+		(0, _jquery2.default)('#return-to-top').hide();
+	}
+});
+
+exports.default = ScrollTop;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(6);
+var _jquerySmoothScroll = __webpack_require__(7);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11307,13 +11363,13 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _StickyHeader = __webpack_require__(4);
+var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
@@ -11324,6 +11380,10 @@ var _Animations2 = _interopRequireDefault(_Animations);
 var _MobileMenu = __webpack_require__(3);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _Scroll = __webpack_require__(4);
+
+var _Scroll2 = _interopRequireDefault(_Scroll);
 
 var _jquery = __webpack_require__(0);
 
@@ -11338,9 +11398,10 @@ new _Animations2.default((0, _jquery2.default)(".transfers__image"), "60%");
 new _Animations2.default((0, _jquery2.default)(".testimonials__quote"), "60%");
 new _Animations2.default((0, _jquery2.default)(".plan__box"), "60%");
 var mobileMenu = new _MobileMenu2.default();
+var scroll = new _Scroll2.default();
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

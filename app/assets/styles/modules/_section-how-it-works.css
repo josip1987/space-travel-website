@@ -63,10 +63,10 @@
 
 			@mixin atMedium {
 				border: 2px solid $carrot;
+				padding-right: 7px;
 				display: inline-block;
 				height: 55px;
 				width: 55px;
-				padding: 8px;
 				font-size: 150%;
 				margin-right: 25px;
 			}

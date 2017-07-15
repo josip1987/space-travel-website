@@ -1699,10 +1699,10 @@ h3 {
 
   .how-it-works__steps--number {
     border: 2px solid #e67e22;
+    padding-right: 7px;
     display: inline-block;
     height: 55px;
     width: 55px;
-    padding: 8px;
     font-size: 150%;
     margin-right: 25px;
   }
@@ -2147,4 +2147,29 @@ h3 {
   .toggle-menu {
     display: none;
   }
+}
+
+.return-to-top {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	height: 50px;
+	width: 50px;
+	opacity: .9;
+	transition: all .2s ease;
+}
+
+@media(min-width: 480px) {
+
+  .return-to-top {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.return-to-top:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  opacity: 1;
+  bottom: 20px;
 }

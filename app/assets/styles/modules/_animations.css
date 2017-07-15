@@ -75,3 +75,24 @@
 		display: none;
 	}
 }
+
+.return-to-top {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	height: 50px;
+	width: 50px;
+	opacity: .9;
+	transition: all .2s ease;
+
+	@mixin atSmall {
+		height: 70px;
+		width: 70px;
+	}
+
+	&:hover {
+		filter: sepia(100%);
+		opacity: 1;
+		bottom: 20px;
+	}
+}
