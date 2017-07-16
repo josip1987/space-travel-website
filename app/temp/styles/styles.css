@@ -1205,7 +1205,7 @@ h3 {
 }
 
 .hero {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/images/hero.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/hero.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -1771,7 +1771,7 @@ h3 {
 }
 
 .testimonials {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/background-1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/background-1.jpg');
 	background-size: cover;
 	color: #ffffff;
 	background-attachment: fixed;
